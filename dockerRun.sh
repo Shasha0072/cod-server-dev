@@ -8,9 +8,8 @@ docker run -d \
   -u "$(id -u shashwat):$(id -g shashwat)" \
   -e "PASSWORD=qwerty" \
   --restart=always \
-  code-server-python \
+  code-server-custom-extension \
   --cert=/home/coder/certificates/cert.pem \
   --cert-key=/home/coder/certificates/key.pem \
   --bind-addr=0.0.0.0:8443 \
-  --auth=password \
-  /home/coder/workspace
+  --auth=password
